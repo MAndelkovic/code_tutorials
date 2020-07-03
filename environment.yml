@@ -1,20 +1,20 @@
-name: kite-env
+name: pb-kite-env
 
 channels:
   - conda-forge
   - defaults
 
 dependencies:
-  - matplotlib=3.2
-  - numpy=1.18.5
-  - scipy=1.4.1
-  - pytest=5.4.3
   - cmake=3.17.0
-  - pip=20.0
   - python=3.8
+  - pip=20.0
+  - hdf5=1.10.6
+  - eigen=3.3.7
+  - h5py=2.10.0
   - pip:
+      - matplotlib==3.2
+      - numpy==1.18.5
+      - scipy==1.4.1
+      - pytest==5.4.3
       - git+https://github.com/dean0x7d/pybinding.git@develop
       - quantum-kite-MAndelkovic
-      - --no-binary=h5py h5py
-      - --no-binary=h5py
-      - h5py
